@@ -7,20 +7,19 @@
 
 import UIKit
 
+protocol CalculateProtocol {
+    var result: Int { get }
+    mutating func calculate(inputValue: Int)
+    func getResult() -> Int
+}
+
 final class CalculateModel {
-//    private var result: Int = 0
-//    func calculateAddition(inputValue: Int) {
-//        result += inputValue
-//    }
-//    func resultOfAddition() -> Int {
-//        result
-//    }
-    struct Addition {
-        private var result: Int = 0
-        mutating func calculateAddition(inputValue: Int) {
+    struct Addition: CalculateProtocol {
+        var result: Int = 0
+        mutating func calculate(inputValue: Int) {
             result += inputValue
         }
-        func resultOfAddition() -> Int {
+        func getResult() -> Int {
             result
         }
     }

@@ -23,13 +23,13 @@ final class ViewController: UIViewController {
     @IBAction func calculateAdditionButton(_ sender: UIButton) {
         var calculateAdditionModel = CalculateModel.Addition()
         
-        calculateAdditionModel.calculateAddition(inputValue: Int(inputNumTextField1.text ?? "") ?? 0)
-        calculateAdditionModel.calculateAddition(inputValue: Int(inputNumTextField2.text ?? "") ?? 0)
-        calculateAdditionModel.calculateAddition(inputValue: Int(inputNumTextField3.text ?? "") ?? 0)
-        calculateAdditionModel.calculateAddition(inputValue: Int(inputNumTextField4.text ?? "") ?? 0)
-        calculateAdditionModel.calculateAddition(inputValue: Int(inputNumTextField5.text ?? "") ?? 0)
+        calculateAdditionModel.calculate(inputValue: Int(inputNumTextField1.text ?? "") ?? 0)
+        calculateAdditionModel.calculate(inputValue: Int(inputNumTextField2.text ?? "") ?? 0)
+        calculateAdditionModel.calculate(inputValue: Int(inputNumTextField3.text ?? "") ?? 0)
+        calculateAdditionModel.calculate(inputValue: Int(inputNumTextField4.text ?? "") ?? 0)
+        calculateAdditionModel.calculate(inputValue: Int(inputNumTextField5.text ?? "") ?? 0)
         
-        setResultOfAdditionLabel(result: calculateAdditionModel.resultOfAddition())
+        setResultOfAdditionLabel(result: calculateAdditionModel.getResult())
     }
     
     private func setResultOfAdditionLabel(result: Int) {
