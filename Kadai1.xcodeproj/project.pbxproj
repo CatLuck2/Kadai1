@@ -56,15 +56,39 @@
 		A2A6AE3127AF5FBE0030F6EE /* Kadai1 */ = {
 			isa = PBXGroup;
 			children = (
+				A2A6AE4627AF5FD40030F6EE /* Model */,
+				A2A6AE4827AF60070030F6EE /* View */,
+				A2A6AE4927AF600A0030F6EE /* Controller */,
 				A2A6AE3227AF5FBE0030F6EE /* AppDelegate.swift */,
 				A2A6AE3427AF5FBE0030F6EE /* SceneDelegate.swift */,
-				A2A6AE3627AF5FBE0030F6EE /* ViewController.swift */,
-				A2A6AE3827AF5FBE0030F6EE /* Main.storyboard */,
 				A2A6AE3B27AF5FC00030F6EE /* Assets.xcassets */,
 				A2A6AE3D27AF5FC00030F6EE /* LaunchScreen.storyboard */,
 				A2A6AE4027AF5FC00030F6EE /* Info.plist */,
 			);
 			path = Kadai1;
+			sourceTree = "<group>";
+		};
+		A2A6AE4627AF5FD40030F6EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2A6AE4827AF60070030F6EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6AE3827AF5FBE0030F6EE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2A6AE4927AF600A0030F6EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A2A6AE3627AF5FBE0030F6EE /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
