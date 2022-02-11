@@ -23,4 +23,31 @@ final class CalculateModel {
             result
         }
     }
+    struct Division: CalculateProtocol {
+        var result: Int = 0
+        mutating func calculate(inputValue: Int) {
+            result += inputValue
+        }
+        func getResult() -> Int {
+            result
+        }
+    }
+    struct Multiplication: CalculateProtocol {
+        var result: Int = 0
+        mutating func calculate(inputValue: Int) {
+            result += inputValue
+        }
+        func getResult() -> Int {
+            result
+        }
+    }
+    struct Divide: CalculateProtocol {
+        var result: Int = 0
+        mutating func calculate(inputValue: Int) {
+            result += inputValue
+        }
+        func getResult() -> Int {
+            result
+        }
+    }
 }
