@@ -21,9 +21,6 @@ final class ViewController: UIViewController {
      ・未使用なので、存在する必要がない
      ・消せば、コード量が減り、読みやすくなる
      */
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//    }
     
     @IBAction func calculateAdditionButton(_ sender: UIButton) {
         /*
@@ -45,16 +42,6 @@ final class ViewController: UIViewController {
          ])
 
         setResultOfAdditionLabel(result: result)
-        
-//        var calculateAdditionModel = CalculateModel.Addition()
-        
-//        calculateAdditionModel.calculate(inputValue: Int(inputNumTextField1.text ?? "") ?? 0)
-//        calculateAdditionModel.calculate(inputValue: Int(inputNumTextField2.text ?? "") ?? 0)
-//        calculateAdditionModel.calculate(inputValue: Int(inputNumTextField3.text ?? "") ?? 0)
-//        calculateAdditionModel.calculate(inputValue: Int(inputNumTextField4.text ?? "") ?? 0)
-//        calculateAdditionModel.calculate(inputValue: Int(inputNumTextField5.text ?? "") ?? 0)
-        
-//        setResultOfAdditionLabel(result: calculateAdditionModel.getResult())
     }
     
     private func setResultOfAdditionLabel(result: Int) {

@@ -21,17 +21,13 @@ import UIKit
  */
 
 protocol CalculateModelProtocol {
-     func calculate(values: [Int]) -> Int
- }
+    func calculate(values: [Int]) -> Int
+}
 
 /*
  CalculateModelProtoclに準拠する型なら、
  共通の処理を統一できる
  */
-//struct CalculateControlModel {
-//    func example(model: CalculateModelProtocol) {
-//    }
-//}
 
 struct CalculateModel: CalculateModelProtocol {
      func calculate(values: [Int]) -> Int {
@@ -42,22 +38,3 @@ struct CalculateModel: CalculateModelProtocol {
           return result
      }
 }
-
-
-//protocol CalculateProtocol {
-//    var result: Int { get }
-//    mutating func calculate(inputValue: Int)
-//    func getResult() -> Int
-//}
-
-//final class CalculateModel {
-//    struct Addition: CalculateProtocol {
-//        var result: Int = 0
-//        mutating func calculate(inputValue: Int) {
-//            result += inputValue
-//        }
-//        func getResult() -> Int {
-//            result
-//        }
-//    }
-//}
